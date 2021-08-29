@@ -10,7 +10,7 @@ class PersonAdmin(admin.ModelAdmin):
     list_display = ('firstName', 'lastName') 
 
 class PayCheckAdmin(admin.ModelAdmin):
-    list_display = ('name', 'hourly', 'totalHours') 
+    list_display = ('name', 'hourly', 'totalHours', 'grossPay') 
 
 # Register your models here.
 

@@ -20,8 +20,8 @@ from todo import views
 
 router = routers.DefaultRouter()
 router.register(r'todos', views.TodoView, 'todo')
-router.register(r'person', views.PersonView, 'todo')
-router.register(r'paycheck', views.PayCheckView, 'todo')
+router.register(r'person', views.PersonView, 'person')
+router.register(r'paycheck', views.PayCheckView, 'payCheck')
 
 
 

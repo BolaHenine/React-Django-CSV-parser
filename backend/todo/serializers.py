@@ -16,4 +16,4 @@ class PersonSerializer(serializers.ModelSerializer):
 class PayCheckSerializer(serializers.ModelSerializer):
     class Meta:
         model = PayCheck
-        fields = ('id','name', 'hourly', 'totalHours')
+        fields = ('id','name', 'hourly', 'totalHours', 'grossPay')

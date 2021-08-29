@@ -22,5 +22,8 @@ class PayCheck(models.Model):
     name = models.CharField(max_length=200)
     hourly = models.IntegerField()
     totalHours = models.IntegerField()
+    grossPay = models.IntegerField()
+    def grossPay(self):
+        return self.hourly * self.totalHours
     def __str__(self):
         return self.name
